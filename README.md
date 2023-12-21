@@ -5,6 +5,12 @@ The extensions used in this project are:
 ### Parsing JSON to Java Object and Vice Versa
 - **RestEasy Jackson**
 
+### Request Body Validation
+- **Hibernate Validation**: Used to validate request body sended from client.
+
+### Documentation
+- **OpenAPI**
+
 ### Database
 - **Hibernate ORM**: Used to create database entities based on Java classes;
 - **Hibernate ORM Panache**: Used to create a Panache repository;
