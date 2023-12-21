@@ -9,7 +9,7 @@ The extensions used in this project are:
 - **Hibernate Validation**: Used to validate request body sended from client.
 
 ### Documentation
-- **OpenAPI**
+- **OpenAPI**: Used to genetare documentation of this API.
 
 ### Database
 - **Hibernate ORM**: Used to create database entities based on Java classes;
