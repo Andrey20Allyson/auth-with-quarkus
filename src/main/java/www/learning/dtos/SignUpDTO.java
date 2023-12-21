@@ -6,11 +6,13 @@ import jakarta.validation.constraints.Size;
 
 public class SignUpDTO {
     @NotBlank
+    @Size(max = 255)
     private String username;
     @NotBlank
-    @Size(min = 6)
+    @Size(min = 6, max = 255)
     private String password;
     @Nullable
+    @Size(max = 255)
     private String email;
 
     public String getUsername() {

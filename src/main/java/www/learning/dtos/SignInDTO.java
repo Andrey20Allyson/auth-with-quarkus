@@ -5,9 +5,10 @@ import jakarta.validation.constraints.Size;
 
 public class SignInDTO {
     @NotBlank
+    @Size(max = 255)
     private String username;
     @NotBlank
-    @Size(min = 6)
+    @Size(min = 6, max = 255)
     private String password;
 
     public String getUsername() {
