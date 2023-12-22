@@ -1,6 +1,6 @@
 package www.learning.services;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -55,7 +55,7 @@ public class AuthService {
         user.setUsername(data.getUsername());
         user.setEmail(data.getEmail());
         user.setRoles(Arrays.asList("user"));
-        user.setCreatedAt(LocalDate.now());
+        user.setCreatedAt(LocalDateTime.now());
 
         String hashedPassword = BcryptUtil.bcryptHash(data.getPassword());
 

@@ -1,6 +1,6 @@
 package www.learning.models;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import io.quarkus.security.jpa.Password;
@@ -28,7 +28,7 @@ public class UserModel {
     @Roles
     private List<String> roles;
     @Column(nullable = false)
-    private LocalDate createdAt;
+    private LocalDateTime createdAt;
 
     public String getEmail() {
         return email;
@@ -70,11 +70,11 @@ public class UserModel {
         this.passwordHash = passwordHash;
     }
 
-    public LocalDate getCreatedAt() {
+    public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(LocalDate createdAt) {
+    public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
 }
